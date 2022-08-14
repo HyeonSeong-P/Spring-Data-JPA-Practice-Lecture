@@ -14,6 +14,13 @@ spring:
         # show_sql: true
         format_sql: true
 
+
+  data:
+    web:
+      pageable: # 스프링 데이터가 제공하는 페이징 기능 global 설정
+        default-page-size: 10
+        max-page-size: 2000
+
 logging.level:
   org.hibernate.SQL: debug
   # org.hibernate.type: trace
